@@ -48,49 +48,51 @@ const Contactlist = () => {
 
       <section className="contact-list p-3">
         <div className="container">
-          <table className="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Img</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Address</th>
-                <th scope="col">City</th>
-                <th scope="col">State</th>
-                <th scope="col">Country</th>
-                <th scope="col">Zip</th>
-                <th scope="col">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">
-               <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Avatar" className="avatar" />
-                </th>
+          <div className="card">
+           
+            <img src="https://th.bing.com/th/id/R.c3631c652abe1185b1874da24af0b7c7?rik=gNdBCSMtHLUrQQ&pid=ImgRaw&r=0" alt="No Data" />
 
-                <td>John Doe</td>
-                <td>123456789</td>
-                <td>123 Main St</td>
-                <td>Anytown</td>
-                <td>CA</td>
-                <td>USA</td>
-                <td>12345</td>
-                <td className="d-flex justify-content-around">
-                  <Link to="/ViwContact/:id" className="btn btn-primary">
-                    <i className="fa fa-eye" aria-hidden="true"></i>
-                  </Link>
-                  <Link to="/AddContact" className="btn btn-success">
-                    <i className="fa fa-pencil" aria-hidden="true"></i>
-                  </Link>
-                  <Link to="//EditContact/:id" className="btn btn-danger">
-                    <i className="fa fa-trash" aria-hidden="true"></i>
-                  </Link>
+            <table className="table table-striped table-hover">
+              <thead>
+                <tr>
 
-                </td>
-              </tr>
-             </tbody>
-          </table>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">City</th>
+                  <th scope="col">State</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Zip</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
 
+
+                  <td>John Doe</td>
+                  <td>123456789</td>
+                  <td>123 Main St</td>
+                  <td>Anytown</td>
+                  <td>CA</td>
+                  <td>USA</td>
+                  <td>12345</td>
+                  <td className="d-flex justify-content-around">
+                    <Link to="/ViwContact/:id" className="btn btn-primary">
+                      <i className="fa fa-eye" aria-hidden="true"></i>
+                    </Link>
+                    <Link to="/AddContact" className="btn btn-success">
+                      <i className="fa fa-pencil" aria-hidden="true"></i>
+                    </Link>
+                    <Link to="//EditContact/:id" className="btn btn-danger">
+                      <i className="fa fa-trash" aria-hidden="true"></i>
+                    </Link>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </>

@@ -6,6 +6,11 @@
     "defaults",
     "not ie 11",
     "not and_ff <= 107",
-    "not firefox <= 108"
-  ]
+    "not firefox <= 108",
+    "not ios_saf <= 14.8",
+    "not opera <= 92"
+  ],
+  "hints": {
+    "compat-api/html": "off"
+  }
 }

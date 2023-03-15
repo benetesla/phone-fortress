@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import ContactList from './components/contact-list/Contact-list';
 import ViwContact from './components/view-contact/ViewContact';
 import AddContact from './components/Addcontact/AddContact';
+import EditContact from './components/EditContact/EditContact';
 import './App.css';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <Route path="/ContactList" element={<ContactList />} />
         <Route path="/ViwContact/:id" element={<ViwContact />} />
         <Route path="/AddContact" element={<AddContact />} />
+        <Route path="/EditContact/:id" element={<EditContact />} />
+       
       </Routes>
 
     </>

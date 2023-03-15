@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
+import ContactList from './components/contact-list/Contact-list';
+import ViwContact from './components/view-contact/ViewContact';
+import AddContact from './components/Addcontact/AddContact';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/ContactList" />} />
+        <Route path="/ContactList" element={<ContactList />} />
+        <Route path="/ViwContact/:id" element={<ViwContact />} />
+        <Route path="/AddContact" element={<AddContact />} />
+      </Routes>
+
+    </>
   );
 }
 
